@@ -1,3 +1,4 @@
+import { SpecialComponent } from './special/special.component';
 import { RouteGuardService } from './services/route-guard.service';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -34,7 +35,8 @@ const routes: Routes = [
       }
     ]
   },
-  { path: '**', component: HomeComponent }
+  { path: '**', component: HomeComponent },
+  { path: 'cafe/categories', component: SpecialComponent}
 ];
 
 @NgModule({
